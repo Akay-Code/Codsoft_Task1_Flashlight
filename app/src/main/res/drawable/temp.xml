@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainScreen"
+    android:background="@drawable/bgwhite"
+
+    >
+
+    <TextView
+        android:id="@+id/txtFlashlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:text="Flashlight"
+        android:textColor="@color/yellow"
+        android:textSize="48sp"
+
+
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_above="@+id/switchFlashLight"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="70sp"
+        android:gravity="center"
+        android:text="OFF"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <Switch
+        android:id="@+id/switchFlashLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rotation="0"
+        android:scaleX="4"
+        android:scaleY="4"
+
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+
+</RelativeLayout>
